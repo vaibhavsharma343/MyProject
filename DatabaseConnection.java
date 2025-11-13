@@ -14,7 +14,7 @@ import org.bson.Document;
 public class DatabaseConnection {
 	
 	
-		 static String connectionString = "mongodb+srv://vaibhavsharma3452_db_user:vaibhavsharma12@vaibhavfirstproject.5k2zcff.mongodb.net/?appName=vaibhavFirstProject";
+		 static String connectionString = "mongodb+srv://:@vaibhavfirstproject.5k2zcff.mongodb.net/?appName=vaibhavFirstProject";
 
 		  static ServerApi serverApi = ServerApi.builder()
 		            .version(ServerApiVersion.V1)
@@ -67,3 +67,4 @@ public class DatabaseConnection {
 			}
 			
 		}
+
