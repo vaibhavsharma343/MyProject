@@ -16,8 +16,8 @@ import jakarta.mail.internet.MimeMessage;
 public class EmailUtil {
 	
 	public static boolean sendRegisterOTP(String to, String userName, int OTP) {
-		String senderEmail = "vadh0923@gmail.com";
-		String senderPassword = "oxiqizjwcyddlsil";
+		String senderEmail = "";
+		String senderPassword = "";
 		
 		Properties emailProperties = new Properties();
 		
@@ -55,4 +55,5 @@ public class EmailUtil {
 			return false;
 		}
 	}
+
 }
