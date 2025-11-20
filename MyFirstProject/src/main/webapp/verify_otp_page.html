@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="otp.css">
+</head>
+<body>
+    <div class="otp-container">
+        <div class="otp-card">
+            <div class="otp-logo">
+                <img src="otp-icon.png" alt="OTP Logo">
+            </div>
+
+            <h2>Verify OTP</h2>
+            <p>Enter the 6-digit code sent to your registered mobile number.</p>
+
+            <form action="VerifyOTPServlet" method="post">
+                <label for="enteredOTP">OTP :</label>
+                <input type="text" id="enteredOTP" name="enteredOTP" placeholder="Please enter the OTP*" required="required">
+                <button type="submit">Submit OTP</button>
+            </form>
+
+            <p class="resend-text">
+                Didn't receive the code? <a href="#">Resend OTP</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left panel with image -->
+        <div class="left-panel">
+            <div class="overlay">
+                <h2>Welcome Page</h2>
+                <p>
+                    Join us and start your journey today. Connect with people,
+                     share ideas,and build something amazing together.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg" alt="Google"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right panel: Your existing form -->
+        <div class="right-panel">
+            <div class="form-header">
+                <a href="#" class="signin">Sign In</a>
+                <button class="register-btn">Register</button>
+            </div>
+
+            <h1>Welcome to Registration Page.</h1>
+            <form action="RegisterServlet" method="post">
+                <input type="text" placeholder="First Name" name="firstName" required="required">
+                <input type="text" placeholder="Last Name" name="lastName" required="required">
+                <input type="text" placeholder="Mobile" name="mobileNum" required="required">
+                <input type="email" placeholder="Email Add" name="email" required="required">
+                <input type="password" placeholder="Your Password here" name="password" required="required">
+
+               <div class="checkbox">
+          <input type="checkbox" required>
+          <span>I agree to all the statements in <a href="#">Terms of service</a></span>
+        </div>
+
+                <button type="submit">Register Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

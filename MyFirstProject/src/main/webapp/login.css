@@ -1,0 +1,156 @@
+/* Reset and base style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #a75b4a, #c58975);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container that holds both sides */
+.login-container {
+    display: flex;
+    width: 900px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Left section (form) */
+.login-left {
+    flex: 1;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+.login-left h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.login-left p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Form inputs */
+.login-left form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-left input {
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.login-left input:focus {
+    border-color: #a75b4a;
+    box-shadow: 0 0 5px rgba(167, 91, 74, 0.4);
+}
+
+/* Forgot password link */
+.forgot {
+    text-align: right;
+    font-size: 13px;
+    color: #a75b4a;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+/* Button style */
+.login-left button {
+    background-color: #a75b4a;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-left button:hover {
+    background-color: #8c4b3d;
+}
+
+/* Divider line with text */
+.or {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.or::before,
+.or::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.or:not(:empty)::before {
+    margin-right: .75em;
+}
+
+.or:not(:empty)::after {
+    margin-left: .75em;
+}
+
+.or span {
+    color: #666;
+    font-size: 13px;
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Right image section */
+.login-right {
+    flex: 1;
+}
+
+.login-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

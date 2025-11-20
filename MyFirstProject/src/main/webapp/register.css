@@ -1,0 +1,169 @@
+/* Base layout */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background: #0d1b2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container: split in two panels */
+.container {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Left side with your uploaded image */
+.left-panel {
+    flex: 1;
+    background: url("moon-bg.jpg") no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 40, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.overlay h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.social-icons {
+    margin-top: 25px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Right panel with your form */
+.right-panel {
+    flex: 1;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.form-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.signin {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.register-btn {
+    background-color: #4da8da;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Form title */
+.right-panel h1 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #4da8da;
+}
+
+/* Checkbox and link */
+.checkbox {
+    margin: 20px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.checkbox a {
+    color: #4da8da;
+    text-decoration: none;
+}
+
+/* Submit button */
+.signup {
+    width: 100%;
+    background: linear-gradient(to right, #4da8da, #007bff);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.signup:hover {
+    background: linear-gradient(to right, #007bff, #4da8da);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+    }
+    .left-panel {
+        height: 250px;
+    }
+    .right-panel {
+        padding: 30px;
+    }
+}
